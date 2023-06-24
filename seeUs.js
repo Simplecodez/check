@@ -19,11 +19,6 @@ function _(x){
 	return document.getElementById(x)
 }
 
-
-
-
-
-
 function timerr(el){
 				seconds--
 
@@ -49,18 +44,14 @@ function timerr(el){
 		var looper = setTimeout('timerr(\''+el+'\')', 1000)
 }
 
-
-
-
-
 //This is the help button control for newbees to our app
 function help(el){
 				if (_("helped").innerHTML == "" ){
 					_("helped").style.backgroundColor = "rgba(215, 215, 215, 0.911)"
-					_("helped").innerHTML = `<p><h5>This is not a guess game, maybe not only for your first play</h5></p>
-											 <p><h5>Pay close attention to hints after each check to navigate your way through</h5></p>
-						 					 <p><h5>Each number must be chosen from 0 through 9 without repetition</h5></p>
-						 					 <p><h5>Goodluck!!!</h5></p>`
+					_("helped").innerHTML = `<strong><p>This is not a guess game, maybe not only for your first play</p></strong>
+											 <strong><p>Pay close attention to hints after each check to navigate your way through</p></strong>
+						 					 <strong><p>Each number must be chosen from 0 through 9 without repetition</p></strong>
+						 					 <strong><p>Goodluck!!!</p></strong>`
 					_("toggle").innerHTML = `<button  onclick="help('helped')">hide?</button>`
 					fadeInOut(el)
 				}else if(_("helped").innerHTML != "" ){
@@ -380,8 +371,6 @@ function guess(el){
 						
 
 		}					
-
-
 }
 			
 
