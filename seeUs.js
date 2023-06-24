@@ -83,10 +83,10 @@ function Unfinished(){
 						}).join('')
 		
 					_("container").innerHTML =`<form action="#" >
-											   		<input type="text" id="numbera"  value="${_("numbera").value}" autofocus class="input-darke" maxlength="1" onkeyup="cleanUp(this)">
-													<input type="text" id="numberb"  value="${_("numberb").value}"  class="input-darke" maxlength="1" onkeyup="cleanUp(this)">
-													<input type="text" id="numberc"  value="${_("numberc").value}"  class="input-darke" maxlength="1" onkeyup="cleanUp(this)">
-													<input type="text" id="numberd"  value="${_("numberd").value}"  class="input-darke" maxlength="1" onkeyup="cleanUp(this)">
+											   		<input type="number" id="numbera"  value="${_("numbera").value}" autofocus class="input-darke" maxlength="1" onkeyup="cleanUp(this)">
+													<input type="number" id="numberb"  value="${_("numberb").value}"  class="input-darke" maxlength="1" onkeyup="cleanUp(this)">
+													<input type="number" id="numberc"  value="${_("numberc").value}"  class="input-darke" maxlength="1" onkeyup="cleanUp(this)">
+													<input type="number" id="numberd"  value="${_("numberd").value}"  class="input-darke" maxlength="1" onkeyup="cleanUp(this)">
 													<button onclick="guess('crossCheck');" class="delete-post-button">Check</button>
 												</form>
 											    <div id="result">${feed}</div>
