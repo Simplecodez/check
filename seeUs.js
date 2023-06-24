@@ -324,6 +324,10 @@ function guess(el){
 					    _("crossCheck").innerHTML = "The numbers must not be the same"
 					    fadeInOut(el)
 						Unfinished()
+					}else if(_("numbera").value>9||_("numberb").value>9||_("numberc").value>9||_("numberd").value>9)){
+					    _("crossCheck").innerHTML = "The numbers must not be betwwen 0 and 9"
+						fadeInOut(el)
+						Unfinished()
 					}else{
 						fadeOut(el)
 						if(parseInt(_("numbera").value, 10) == a){
