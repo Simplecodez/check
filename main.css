@@ -1,6 +1,7 @@
 body, .tooltip
  {
   font-family: 'Open Sans', sans-serif;
+  background-color: linear-gradient(to bottom, #b8307c, #4a3f6d);
 }
 
 .header-bar {
@@ -12,6 +13,9 @@ padding: 10px;
 
 }
 
+a {
+  text-align: center;
+}
 
 
 .container--narrow {
@@ -435,13 +439,13 @@ font-size: 16px;
 
 
 #crossCheck{
-	padding:7px;
-	background-color: #f012129f;
-border-radius: 5px;
-width:335px;
-display: none;
-}
-
+  padding:7px;
+  background-color: #f012129f;
+  border-radius: 5px;
+  width:335px;
+  display: none;
+  }
+  
 
 
 
@@ -453,8 +457,8 @@ display: none;
 	padding: 8px;
 	margin-left: 500px;
 	background-color: #24ce57;
-width: 80px;
-height: 50px;
+  width: 80px;
+  height: 50px;
 	border-radius: 5px;
 	display: none;
 }
