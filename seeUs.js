@@ -18,6 +18,7 @@ var same;
 var styles;
 var fade_in_from = 0;
 var fade_out_from = 10;
+console.log(a,b,c,d)
 var message =
   "Congrats, you have gotten the number, do you want to play again hit the start button";
 var seconds = 60;
