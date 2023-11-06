@@ -21,6 +21,8 @@ var fade_out_from = 10;
 console.log(a,b,c,d)
 var message =
   "Congrats, you have gotten the number, do you want to play again hit the start button";
+  var myNewArray = message.split('')
+  console.log(myNewArray)
 var seconds = 60;
 var minutes = 4;
 function _(x) {
@@ -352,7 +354,7 @@ function guess(el) {
     _("numberc").value > 9 ||
     _("numberd").value > 9
   ) {
-    _("crossCheck").innerHTML = "The numbers must not be betwwen 0 and 9";
+    _("crossCheck").innerHTML = "The numbers must not be between 0 and 9";
     fadeInOut(el);
     Unfinished();
   } else {
