@@ -72,7 +72,7 @@ function help(el) {
     fadeOut(el);
   }
 }
-
+// This generates another form as long as the user has not placed the number in their right places
 function Unfinished() {
   if (
     _("numbera").value == a &&
@@ -109,7 +109,7 @@ function Unfinished() {
 											   `;
   }
 }
-
+// This generates the distinct 4 digits number
 function genrand() {
   while (
     a == b ||
@@ -133,7 +133,7 @@ function genrand() {
 }
 
 document.body.addEventListener("keydown", whichKey);
-
+// This controls the navigation from the one input to the other.
 function whichKey(event) {
   key = event.keyCode;
   switch (key) {
@@ -145,7 +145,7 @@ function whichKey(event) {
       break;
   }
 }
-
+// key controls
 function moveRight() {
   if (_("numbera") === document.activeElement) {
     _("numbera").blur();
